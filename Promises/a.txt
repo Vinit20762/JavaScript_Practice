@@ -1,0 +1,1 @@
+hello this is promisified version of Callback of reading file.
