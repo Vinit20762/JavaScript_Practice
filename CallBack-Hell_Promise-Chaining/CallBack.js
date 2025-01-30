@@ -6,13 +6,13 @@ logs hello there 5 seconds after step 2 */
 
 //Callback hell program using anonymous funciton.
 function Callback(){
-  console.log("hi");
+  console.log("hi!");
 }
 setTimeout(function(){ 
- console.log("hi");
+ console.log("hi!");
 
  setTimeout(function(){
-    console.log("Hello");
+    console.log("Hello!");
 
   setTimeout(function(){
     console.log("Hello there");
