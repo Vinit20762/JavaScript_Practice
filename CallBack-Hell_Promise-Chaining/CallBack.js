@@ -1,7 +1,7 @@
 /* Q: Write code that
 logs hi after 1 second
 logs hello 3 seconds after step 1
-logs hello there 5 seconds after step 2 */
+logs hello there 5 seconds after step 2 *//
 
 
 //Callback hell program using anonymous funciton.
