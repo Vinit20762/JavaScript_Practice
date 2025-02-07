@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<input id = 'input' placeholder="Enter todo" type="text"></input>
+<button id = 'button' onClick="addTodo()">Add todo!</button>
+
+<script>
+    let ctr = 1;
+    function deleteTodo(index){
+        const deleteTodo = document.getElementById(index);
+        deleteTodo.parentNode.removeChild(deleteTodo);
+    }
+
+
+    function addTodo(){
+        const inputEl = document.querySelector("input");
+        const value = inputEl.value;
+
+        const newEl = document.createElement("div");
+        newEl.setAttribute("id", ctr);
+        newEl.innerHTML = "<div>"+ value +"</div><button onClick='deleteTodo("+ ctr +")'>Delete Todo!</button>"
+        document.querySelector("body").appendChild(newEl);
+        ctr = ctr + 1;
+
+        newEl.style.color='Green';
+        newEl.style.display = flex;
+    }
+
+</script>
+</body>
+</html>
