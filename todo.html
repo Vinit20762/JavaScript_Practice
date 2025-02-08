@@ -6,6 +6,11 @@
     <style>
         body{
             text-align: center;
+            background-color: pink;
+        }
+        #todobutton{
+            margin-left: 5px;
+            height: 19px;
         }
 
     </style>
@@ -28,12 +33,16 @@
 
         const newEl = document.createElement("div");
         newEl.setAttribute("id", ctr);
-        newEl.innerHTML = "<div>"+ value +"</div><button onClick='deleteTodo("+ ctr +")'>Delete Todo!</button>"
+        newEl.innerHTML = "<div >"+ value +"</div><button id='todobutton'  onClick='deleteTodo("+ ctr +")'>Delete Todo!</button>"
         document.querySelector("body").appendChild(newEl);
         ctr = ctr + 1;
 
-        newEl.style.color='Green';
-        newEl.style.display = flex;
+        newEl.style.color='black';
+        newEl.style.display = "flex";
+        newEl.style.justifyContent = "center";
+        newEl.style.marginTop = '5px';
+
+
     }
 
 </script>
